@@ -1,0 +1,222 @@
+:root {
+  --main-bcg-color: #ffffff;
+  --main-txt-color: #757575;
+  --brand-accent-color: #2196f3;
+  --accent-btn-color: #188ce8;
+  --color-nav: #212121;
+  --logo-color-part: #000000;
+  --button-static-color: #f5f4fa;
+  --hero-footer-bcg: #2f303a;
+}
+
+/* *==================================================* */
+body {
+  color: var(--main-txt-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+/* *==================================================* */
+
+/* ************** Studio page ************** */
+
+/* * Header section * */
+.logo {
+  color: var(--logo-color-part);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.logo-web {
+  color: var(--brand-accent-color);
+}
+/* site nav */
+.site-nav .link {
+  color: var(--color-nav);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--brand-accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--brand-accent-color);
+}
+
+/* site contacts */
+.site-contacts .link {
+  color: var(--main-txt-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--brand-accent-color);
+}
+
+/* *=================================================* */
+
+/* *Hero section* */
+.hero {
+  background-color: var(--hero-footer-bcg);
+}
+
+.hero-title {
+  color: var(--main-bcg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* *Hero button* */
+.hero-button {
+  border: none;
+  color: var(--main-bcg-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background: var(--brand-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  cursor: pointer;
+
+  background-color: var(--accent-btn-color);
+}
+
+/* *==================================================* */
+
+/* *What are we doing section* */
+.section-title {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.section-title-item {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* *Our team section* */
+.team {
+  background-color: var(--button-static-color);
+}
+
+.team-item {
+  background-color: var(--main-bcg-color);
+}
+
+.team-title-item {
+  color: var(--color-nav);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* *==================================================* */
+
+/* *Footer section* */
+.footer-section {
+  background-color: var(--hero-footer-bcg);
+}
+.footer-logo-studio {
+  color: var(--main-bcg-color);
+}
+.address {
+  color: var(--main-bcg-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.footer-site-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* *==================================================* */
+
+/* ************** Portfolio page ************** */
+
+/* *Portfolio section* */
+.portfolio-title-item {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section-text {
+  color: var(--main-txt-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+/* *Button* */
+.button {
+  border: none;
+  color: var(--color-nav);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background: var(--button-static-color);
+  border-radius: 4px;
+}
+
+.button.current {
+  background: var(--brand-accent-color);
+  color: var(--main-bcg-color);
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  border: none;
+  color: var(--main-bcg-color);
+
+  background: var(--brand-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
