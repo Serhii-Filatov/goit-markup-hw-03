@@ -49,7 +49,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid red; */
 }
 
 /* * section * */
@@ -126,8 +125,6 @@ p {
   display: flex;
   align-items: center;
   margin-left: auto;
-  /* margin-top: 32px;
-  margin-bottom: 32px; */
 }
 
 .site-nav-item .link {
@@ -202,10 +199,13 @@ p {
 
 /* * Section list * */
 .section-list {
+  display: flex;
+  margin-bottom: 94px;
 }
 
 .section-title-item {
   text-align: left;
+  margin-bottom: 10px;
 
   color: var(--color-nav);
   font-size: 14px;
