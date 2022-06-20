@@ -40,6 +40,20 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* *==================================================* */
 
 /* * Container * */
@@ -254,9 +268,6 @@ p {
 }
 
 .team-card {
-  height: 368px;
-  width: auto;
-
   background-color: var(--main-bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -275,6 +286,7 @@ p {
 .team-text {
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 30px;
 }
 .team-photo {
   margin-bottom: 30px;
@@ -319,19 +331,8 @@ p {
 
 /* ************** Portfolio page ************** */
 
-/* *Portfolio section* */
-.portfolio-title-item {
-  color: var(--color-nav);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-}
+/* * Sort filters section * */
 
-.section-text {
-  color: var(--main-txt-color);
-  font-size: 16px;
-  line-height: 1.9;
-}
 /* *Button* */
 
 .filters-btn {
@@ -340,7 +341,7 @@ p {
   margin-bottom: 50px;
 }
 
-.btn-item {
+.btn-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -355,7 +356,6 @@ p {
 
   background: var(--button-static-color);
   border-radius: 4px;
-
   padding: 6px 22px;
   text-align: center;
 }
@@ -377,6 +377,7 @@ p {
   border-radius: 4px;
 }
 
+/* *Portfolio section* */
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -390,7 +391,7 @@ p {
   margin-top: 30px;
 
   text-align: left;
-  background: #ffffff;
+  background: var(--main-bcg-color);
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -398,6 +399,19 @@ p {
 
 .portfolio-photo {
   margin-bottom: 20px;
+}
+
+.portfolio-title-item {
+  color: var(--color-nav);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section-text {
+  color: var(--main-txt-color);
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 .portfolio-text {
