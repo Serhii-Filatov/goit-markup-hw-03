@@ -233,7 +233,7 @@ p {
   text-transform: uppercase;
 }
 
-.section-text {
+.studio-section-text {
   text-align: left;
   width: 270px;
 
@@ -407,7 +407,7 @@ p {
   line-height: 2;
 }
 
-.section-text {
+.portfolio-section-text {
   color: var(--main-txt-color);
   font-size: 16px;
   line-height: 1.9;
